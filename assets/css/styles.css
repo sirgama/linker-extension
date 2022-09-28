@@ -97,7 +97,35 @@ ul{
     display: flex;
     flex-direction: column;
 }
-
+.listedLinks{
+    background-color: #233a80;
+    border-radius: 10px;
+    margin: 16px auto 0 0;
+    padding: 10px;
+    width: 280px;
+    overflow-y: auto;
+    max-height: 500px;
+}
+li{
+    list-style-type: none;
+    border: 1px solid #4b77f8;
+    margin: 4px auto 4px 0;
+    padding: 8px;
+    font-size: 13px;
+    border-radius: 15px 15px 15px 0px;
+    color: #f0f0f0;
+    font-weight: bold;
+    background-color: #478ac9;
+}
+.listedLinks p{
+    text-decoration: dashed;
+}
+a{
+    text-decoration: none;
+}
+.ftext{
+    margin: 40px auto 0 auto;
+}
 
 @keyframes flip {
     0%,80% {

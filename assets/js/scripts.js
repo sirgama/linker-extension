@@ -9,3 +9,4 @@ function hoverEffect(){
 function outEffect(){
     getStartedBtn.textContent = "Get started 🐥"
 }
+
