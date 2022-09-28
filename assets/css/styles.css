@@ -39,6 +39,7 @@ body{
     padding: 15px;
 }
 .getStarted{
+    cursor: pointer;
     background-color: #0183ff;
     color: antiquewhite;
     font-weight: bolder;
