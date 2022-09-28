@@ -9,10 +9,11 @@ body{
 }
 
 .main{
-    background-color: #11141c;
+    background-color: #061b5c;
     margin: 20px auto;
     width: 400px;
     border-radius: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
    
 }
 .card{
@@ -38,7 +39,7 @@ body{
     text-align: center;
     padding: 15px;
 }
-.getStarted{
+button{
     cursor: pointer;
     background-color: #0183ff;
     color: antiquewhite;
@@ -49,3 +50,57 @@ body{
     height: 60px;
     border-radius: 10px;
 }
+.frog{
+    font-size: 25px;
+}
+.frog:hover{
+    animation-iteration-count: infinite;animation: shake 0.5s;
+    
+}
+
+.inputData {
+    background-color: transparent;
+    color: antiquewhite;
+    font-weight: bold;
+    border: none;
+    border-bottom: 3px solid #478ac9;
+    padding: 10px;
+    margin: 5px auto 18px 0;
+    width: 90%;
+}
+#inputData:focus{
+    background-color: transparent;
+    color: antiquewhite;
+    border: none;
+    border-bottom: 3px solid #478ac9;
+    padding: 10px;
+    margin: 5px auto 18px 0;
+    width: 90%;
+}
+.inputData:active{
+    background-color: transparent;
+    color: antiquewhite;
+    border: none;
+    border-bottom: 3px solid #478ac9;
+    padding: 10px;
+    margin: 5px auto 18px 0;
+    width: 90%;
+}
+
+.infotext{
+    text-align: center;
+    color: #c7d8e7;
+    margin-top: 0;
+    font-size: 12px;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+}
+
+
+@keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
