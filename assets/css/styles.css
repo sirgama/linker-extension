@@ -46,8 +46,19 @@ button{
     font-weight: bolder;
     font-size: 15px;
     border: none;
-    width: 220px;
-    height: 60px;
+    width: 120px;
+    height: 45px;
+    border-radius: 10px;
+}
+.delete{
+    cursor: pointer;
+    background-color: transparent;
+    color: antiquewhite;
+    font-weight: bolder;
+    font-size: 15px;
+    border: 2px solid #0183ff;
+    width: 120px;
+    height: 45px;
     border-radius: 10px;
 }
 .frog{
