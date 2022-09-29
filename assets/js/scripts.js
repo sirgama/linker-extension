@@ -36,6 +36,8 @@ deleteBtn.addEventListener("click", () => {
     localStorage.clear()
     savedLinks = []
     orderedList.textContent = ""
+    renderData()
+
 })
 
 function renderData(){
