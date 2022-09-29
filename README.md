@@ -2,9 +2,9 @@
 A chrome extension for saving/bookmarking links or any other relevant info.
 ## Demo
 
-https://res.cloudinary.com/dzhpqlsy9/video/upload/v1664453580/cinna_vn02xd.mkv
+
 <video width="500" height="400" controls>
-  <source src="https://res.cloudinary.com/dzhpqlsy9/video/upload/v1664453580/cinna_vn02xd.mkv" type="video/mkv">
+  <source src="https://res.cloudinary.com/dzhpqlsy9/video/upload/v1664454714/cinna_k1znyd.mp4" type="video/mp4">
   
 </video>
 
