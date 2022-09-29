@@ -20,7 +20,7 @@ const RetrievedLinks = JSON.parse(localStorage.getItem("links"))
 console.log(RetrievedLinks)
 if (RetrievedLinks){
     savedLinks = RetrievedLinks
-    renderData()
+    renderData(savedLinks)
 }
 
 saveBtn.addEventListener("click", ()=>{
@@ -29,24 +29,24 @@ saveBtn.addEventListener("click", ()=>{
     inputel.value = "";
     localStorage.setItem("links", JSON.stringify(savedLinks));
     console.log(savedLinks);
-    renderData();
+    renderData(savedLinks);
 })
 deleteBtn.addEventListener("click", () => {
     localStorage.clear(RetrievedLinks)
     localStorage.clear()
     savedLinks = []
     orderedList.textContent = ""
-    renderData()
+    renderData(savedLinks)
 
 })
 
-function renderData(){
+function renderData(links){
     let emojis = ["🐉", "🐥", "🐊","💩", "🦍", "🐢", "🐩", "🦭", "🦀", "🐝", "🤖", "🐘", "🐸", "🕷","🐆", "🦕", "🦁","🐉", "🐥", "🐊","💩", "🦍", "🐢", "🐩", "🦭", "🦀", "🐝", "🤖", "🐘", "🐸", "🕷","🐆", "🦕", "🦁"]
     let randomEmoji = Math.floor(Math.random()*emojis.length)
     
     let lists = ""
-    for(let i = 0; i<savedLinks.length; i++){
-        lists += `<a  href="${savedLinks[i]}" target="_blank"><li>${emojis[randomEmoji]} - ${savedLinks[i]}</li></a>`
+    for(let i = 0; i<links.length; i++){
+        lists += `<a  href="${links[i]}" target="_blank"><li>${emojis[randomEmoji]} - ${links[i]}</li></a>`
     }
     orderedList.innerHTML=lists
 
