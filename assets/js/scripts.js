@@ -7,7 +7,7 @@ function hoverEffect(){
     getStartedBtn.textContent = "Let's do this!🦁"
 }
 function outEffect(){
-    getStartedBtn.textContent = "Get started 🐥"
+    getStartedBtn.textContent = "Get started"
 };
 
 let savedLinks = [];
