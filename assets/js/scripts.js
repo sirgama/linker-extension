@@ -14,7 +14,13 @@ let savedLinks = [];
 let saveBtn = document.getElementById("save");
 let orderedList = document.getElementById("listitems");
 let inputel = document.getElementById("inputData");
-
+let RetrievedLinks = JSON.parse(localStorage.getItem("links"))
+// localStorage.clear()
+console.log(RetrievedLinks)
+if (RetrievedLinks){
+    savedLinks = RetrievedLinks
+    renderData()
+}
 
 saveBtn.addEventListener("click", ()=>{
     
@@ -31,7 +37,7 @@ function renderData(){
     
     let lists = ""
     for(let i = 0; i<savedLinks.length; i++){
-        lists += `<a  href="${savedLinks[i]}" target="_blank"><li>${emojis[i]} - ${savedLinks[i]}</li></a>`
+        lists += `<a  href="${savedLinks[i]}" target="_blank"><li>${emojis[randomEmoji]} - ${savedLinks[i]}</li></a>`
     }
     orderedList.innerHTML=lists
 
