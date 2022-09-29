@@ -8,17 +8,31 @@ function hoverEffect(){
 }
 function outEffect(){
     getStartedBtn.textContent = "Get started 🐥"
-}
+};
 
-// let emojis = ["🐉", "🐥", "🐊","💩", "🦍", "🐢", "🐩", "🦭", "🦀", "🐝", "🤖", "🐘", "🐸", "🕷","🐆", "🦕", "🦁"]
+let savedLinks = [];
+let saveBtn = document.getElementById("save");
+let orderedList = document.getElementById("listitems");
+let inputel = document.getElementById("inputData");
 
-let saveBtn = document.getElementById("save")
-let orderedList = document.getElementById("listitems")
-let inputel = document.getElementById("inputData")
-let savedLinks = []
 
 saveBtn.addEventListener("click", ()=>{
-    let emojis = ["🐉", "🐥", "🐊","💩", "🦍", "🐢", "🐩", "🦭", "🦀", "🐝", "🤖", "🐘", "🐸", "🕷","🐆", "🦕", "🦁"]
     
-
+    savedLinks.push(inputel.value);
+    inputel.value = "";
+    localStorage.setItem("links", JSON.stringify(savedLinks));
+    console.log(savedLinks);
+    renderData();
 })
+
+function renderData(){
+    let emojis = ["🐉", "🐥", "🐊","💩", "🦍", "🐢", "🐩", "🦭", "🦀", "🐝", "🤖", "🐘", "🐸", "🕷","🐆", "🦕", "🦁"]
+    let randomEmoji = Math.floor(Math.random()*emojis.length)
+    
+    let lists = ""
+    for(let i = 0; i<savedLinks.length; i++){
+        lists += `<a  href="${savedLinks[i]}" target="_blank"><li>${savedLinks[i]}</li></a>`
+    }
+    orderedList.innerHTML+=lists
+
+}
