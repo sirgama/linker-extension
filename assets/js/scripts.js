@@ -12,9 +12,10 @@ function outEffect(){
 
 let savedLinks = [];
 let saveBtn = document.getElementById("save");
+let deleteBtn = document.getElementById("deleted");
 let orderedList = document.getElementById("listitems");
 let inputel = document.getElementById("inputData");
-let RetrievedLinks = JSON.parse(localStorage.getItem("links"))
+const RetrievedLinks = JSON.parse(localStorage.getItem("links"))
 // localStorage.clear()
 console.log(RetrievedLinks)
 if (RetrievedLinks){
@@ -29,6 +30,12 @@ saveBtn.addEventListener("click", ()=>{
     localStorage.setItem("links", JSON.stringify(savedLinks));
     console.log(savedLinks);
     renderData();
+})
+deleteBtn.addEventListener("click", () => {
+    localStorage.clear(RetrievedLinks)
+    localStorage.clear()
+    savedLinks = []
+    orderedList.textContent = ""
 })
 
 function renderData(){
