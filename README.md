@@ -12,7 +12,9 @@ https://res.cloudinary.com/dzhpqlsy9/video/upload/v1664454714/cinna_k1znyd.mp4
 
 <img src="/assets/shot1.png">
 <img src="/assets/shot2.png">
+
 ## Setup
+
 Clone the repository
 
     git clone https://github.com/sirgama/linker-extension
