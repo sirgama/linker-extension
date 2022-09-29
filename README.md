@@ -2,10 +2,10 @@
 A chrome extension for saving/bookmarking links or any other relevant info.
 ## Demo
 
+https://res.cloudinary.com/dzhpqlsy9/video/upload/v1664453580/cinna_vn02xd.mkv
 <video width="500" height="400" controls>
-  <source src="https://res.cloudinary.com/dzhpqlsy9/video/upload/v1664453580/cinna_vn02xd.mkv" type="video/mp4">
-  <source src="movie.ogg" type="video/ogg">
-  Your browser does not support the video tag.
+  <source src="https://res.cloudinary.com/dzhpqlsy9/video/upload/v1664453580/cinna_vn02xd.mkv" type="video/mkv">
+  
 </video>
 
 ## Setup
