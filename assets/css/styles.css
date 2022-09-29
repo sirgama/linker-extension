@@ -108,14 +108,15 @@ ul{
 }
 li{
     list-style-type: none;
-    border: 1px solid #4b77f8;
+    border: none;
     margin: 4px auto 4px 0;
     padding: 8px;
     font-size: 13px;
     border-radius: 15px 15px 15px 0px;
-    color: #f0f0f0;
+    color: #ffffff;
     font-weight: bold;
-    background-color: #478ac9;
+    background-color: #1688f3;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 .listedLinks p{
     text-decoration: dashed;

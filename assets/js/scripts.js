@@ -10,3 +10,15 @@ function outEffect(){
     getStartedBtn.textContent = "Get started 🐥"
 }
 
+// let emojis = ["🐉", "🐥", "🐊","💩", "🦍", "🐢", "🐩", "🦭", "🦀", "🐝", "🤖", "🐘", "🐸", "🕷","🐆", "🦕", "🦁"]
+
+let saveBtn = document.getElementById("save")
+let orderedList = document.getElementById("listitems")
+let inputel = document.getElementById("inputData")
+let savedLinks = []
+
+saveBtn.addEventListener("click", ()=>{
+    let emojis = ["🐉", "🐥", "🐊","💩", "🦍", "🐢", "🐩", "🦭", "🦀", "🐝", "🤖", "🐘", "🐸", "🕷","🐆", "🦕", "🦁"]
+    
+
+})
