@@ -6,6 +6,7 @@ body{
     box-sizing: border-box;
     color: antiquewhite;
     font-family: 'Poppins', sans-serif;
+    background-color: #061b5c;
 }
 
 .main{
@@ -127,6 +128,8 @@ li{
     color: #ffffff;
     font-weight: bold;
     background-color: #1688f3;
+    
+    overflow-wrap: break-word;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 .listedLinks p{
