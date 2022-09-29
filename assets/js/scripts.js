@@ -12,6 +12,7 @@ function outEffect(){
 
 let savedLinks = [];
 let saveBtn = document.getElementById("save");
+let saveTab = document.getElementById("savetab");
 let deleteBtn = document.getElementById("deleted");
 let orderedList = document.getElementById("listitems");
 let inputel = document.getElementById("inputData");
@@ -38,6 +39,16 @@ deleteBtn.addEventListener("click", () => {
     orderedList.textContent = ""
     renderData(savedLinks)
 
+})
+saveTab.addEventListener("click", () => {
+   
+    chrome.tabs.query({active: true, currentWindow: true}, tabs =>{
+        let urls = tabs[0].url;
+        savedLinks.push(urls)
+        console.log(urls)
+        localStorage.setItem("links", JSON.stringify(savedLinks));
+        renderData(savedLinks)
+    });
 })
 
 function renderData(links){
